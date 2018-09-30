@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -104,8 +105,30 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emptyRestaurantView" destination="8y8-5J-HEl" id="VQE-RX-cJz"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqA-0b-gq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="8y8-5J-HEl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="SRu-fH-fNF">
+                            <rect key="frame" x="28" y="120" width="319" height="355"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="SRu-fH-fNF" secondAttribute="height" multiplier="80:89" id="Rak-gB-ynA"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SRu-fH-fNF" firstAttribute="top" secondItem="MeI-Vk-K9I" secondAttribute="top" constant="100" id="4yt-sF-TMA"/>
+                        <constraint firstItem="MeI-Vk-K9I" firstAttribute="trailing" secondItem="SRu-fH-fNF" secondAttribute="trailing" constant="28" id="661-lX-XdE"/>
+                        <constraint firstItem="SRu-fH-fNF" firstAttribute="leading" secondItem="MeI-Vk-K9I" secondAttribute="leading" constant="28" id="SrE-sq-nQJ"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="MeI-Vk-K9I"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="1440.8" y="160.56971514242881"/>
         </scene>
@@ -770,6 +793,7 @@
         <image name="close" width="16" height="16"/>
         <image name="cool" width="78" height="83"/>
         <image name="cross" width="33" height="32"/>
+        <image name="empty" width="310" height="372"/>
         <image name="happy" width="78" height="86"/>
         <image name="heart-tick" width="22" height="21"/>
         <image name="love" width="78" height="82"/>
