@@ -35,6 +35,8 @@
 		9BE780202164453900694AA8 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7801F2164453900694AA8 /* WalkthroughContentViewController.swift */; };
 		9BE78022216448C900694AA8 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE78021216448C900694AA8 /* WalkthroughPageViewController.swift */; };
 		9BE78024216460D400694AA8 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE78023216460D400694AA8 /* WalkthroughViewController.swift */; };
+		9BE780412168921700694AA8 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE7803F2168921700694AA8 /* Discover.storyboard */; };
+		9BE780432168924800694AA8 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE780422168924800694AA8 /* About.storyboard */; };
 		F4A0586A1F58165D00D6288C /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A058691F58165D00D6288C /* RestaurantDetailViewController.swift */; };
 		F4A0586C1F58FBE400D6288C /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A0586B1F58FBE400D6288C /* Restaurant.swift */; };
 		F4BD89C71F4E961C00588D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD89C61F4E961C00588D6D /* AppDelegate.swift */; };
@@ -74,6 +76,8 @@
 		9BE7801F2164453900694AA8 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		9BE78021216448C900694AA8 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		9BE78023216460D400694AA8 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		9BE780402168921700694AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FoodPin/Storyboard/Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
+		9BE780422168924800694AA8 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		F4A058691F58165D00D6288C /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		F4A0586B1F58FBE400D6288C /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		F4BD89C31F4E961C00588D6D /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +195,8 @@
 		F4BD89BA1F4E961C00588D6D = {
 			isa = PBXGroup;
 			children = (
+				9BE780422168924800694AA8 /* About.storyboard */,
+				9BE7803F2168921700694AA8 /* Discover.storyboard */,
 				F4BD89C51F4E961C00588D6D /* FoodPin */,
 				F4BD89C41F4E961C00588D6D /* Products */,
 				9BE78007215C57F700694AA8 /* Frameworks */,
@@ -290,11 +296,13 @@
 				9BE77FFB2159A60D00694AA8 /* Rubik-Regular.ttf in Resources */,
 				F4BD89D11F4E961C00588D6D /* LaunchScreen.storyboard in Resources */,
 				9BE77FF62159A60D00694AA8 /* Rubik-BlackItalic.ttf in Resources */,
+				9BE780432168924800694AA8 /* About.storyboard in Resources */,
 				9BE77FF22159A60D00694AA8 /* Rubik-LightItalic.ttf in Resources */,
 				F4BD89CE1F4E961C00588D6D /* Assets.xcassets in Resources */,
 				9BE7801E2161DA6C00694AA8 /* Onboarding.storyboard in Resources */,
 				9BE77FF52159A60D00694AA8 /* Rubik-Italic.ttf in Resources */,
 				9BE77FF92159A60D00694AA8 /* Rubik-Black.ttf in Resources */,
+				9BE780412168921700694AA8 /* Discover.storyboard in Resources */,
 				9BE77FF42159A60D00694AA8 /* Rubik-Bold.ttf in Resources */,
 				F4BD89CC1F4E961C00588D6D /* Main.storyboard in Resources */,
 				9BE77FF12159A60D00694AA8 /* Rubik-MediumItalic.ttf in Resources */,
@@ -337,6 +345,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9BE7803F2168921700694AA8 /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BE780402168921700694AA8 /* Base */,
+			);
+			name = Discover.storyboard;
+			sourceTree = "<group>";
+		};
 		F4BD89CA1F4E961C00588D6D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
