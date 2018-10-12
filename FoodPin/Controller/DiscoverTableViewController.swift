@@ -117,6 +117,7 @@ class DiscoverTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DiscoverTableViewCell.self), for: indexPath) as! DiscoverTableViewCell
 
         // Configure the cell...
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         let restaurant = restaurants[indexPath.row]
         cell.nameLabel.text = restaurant.object(forKey: "name") as? String
         cell.typeLabel.text = restaurant.object(forKey: "type") as? String

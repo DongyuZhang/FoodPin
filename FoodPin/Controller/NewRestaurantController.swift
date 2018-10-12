@@ -151,7 +151,7 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
         record.setValue(restaurant.type, forKey: "type")
         record.setValue(restaurant.location, forKey: "location")
         record.setValue(restaurant.phone, forKey: "phone")
-        record.setValue(restaurant.description, forKey: "description")
+        record.setValue(restaurant.summary, forKey: "description")
         
         let imageData = restaurant.image! as Data
         // Resize the image
