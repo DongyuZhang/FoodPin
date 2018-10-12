@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B478E2A216ACF4900EF6D98 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B478E29216ACF4900EF6D98 /* CloudKit.framework */; };
+		9B478E2C216C22D500EF6D98 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B478E2B216C22D500EF6D98 /* DiscoverTableViewController.swift */; };
+		9B478E2E217023D400EF6D98 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B478E2D217023D400EF6D98 /* DiscoverTableViewCell.swift */; };
 		9BE74953216A852C00418F13 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE74951216A852B00418F13 /* About.storyboard */; };
 		9BE74955216A907400418F13 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE74954216A907400418F13 /* AboutTableViewController.swift */; };
 		9BE74957216A9D7300418F13 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE74956216A9D7300418F13 /* WebViewController.swift */; };
@@ -50,6 +53,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B478E28216ACF4300EF6D98 /* FoodPin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodPin.entitlements; sourceTree = "<group>"; };
+		9B478E29216ACF4900EF6D98 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		9B478E2B216C22D500EF6D98 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		9B478E2D217023D400EF6D98 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 		9BE74952216A852B00418F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
 		9BE74954216A907400418F13 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		9BE74956216A9D7300418F13 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE78009215C57F700694AA8 /* MapKit.framework in Frameworks */,
+				9B478E2A216ACF4900EF6D98 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +152,7 @@
 		9BE78007215C57F700694AA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B478E29216ACF4900EF6D98 /* CloudKit.framework */,
 				9BE78008215C57F700694AA8 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -162,6 +171,7 @@
 				9BE78023216460D400694AA8 /* WalkthroughViewController.swift */,
 				9BE74954216A907400418F13 /* AboutTableViewController.swift */,
 				9BE74956216A9D7300418F13 /* WebViewController.swift */,
+				9B478E2B216C22D500EF6D98 /* DiscoverTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +194,7 @@
 				9BE7800A215C5E0800694AA8 /* RestaurantDetailSeparatorCell.swift */,
 				9BE7800C215C5E9500694AA8 /* RestaurantDetailMapCell.swift */,
 				9BE78012215FFA6600694AA8 /* RoundedTextField.swift */,
+				9B478E2D217023D400EF6D98 /* DiscoverTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +231,7 @@
 		F4BD89C51F4E961C00588D6D /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				9B478E28216ACF4300EF6D98 /* FoodPin.entitlements */,
 				9BE78002215B0D9400694AA8 /* Extensions */,
 				9BE77FE42159A5E600694AA8 /* Resources */,
 				F4A058701F59579200D6288C /* Storyboard */,
@@ -269,6 +281,12 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
 								enabled = 1;
 							};
 						};
@@ -325,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B478E2C216C22D500EF6D98 /* DiscoverTableViewController.swift in Sources */,
 				9BE77FFD2159AA2300694AA8 /* RestaurantDetailHeaderView.swift in Sources */,
 				9BE74957216A9D7300418F13 /* WebViewController.swift in Sources */,
 				F4A0586C1F58FBE400D6288C /* Restaurant.swift in Sources */,
@@ -332,6 +351,7 @@
 				9BE7800D215C5E9500694AA8 /* RestaurantDetailMapCell.swift in Sources */,
 				9BE780012159B26100694AA8 /* RestaurantDetailTextCell.swift in Sources */,
 				F4BD89D91F4E96FB00588D6D /* RestaurantTableViewController.swift in Sources */,
+				9B478E2E217023D400EF6D98 /* DiscoverTableViewCell.swift in Sources */,
 				F4BD89DB1F4EA9FC00588D6D /* RestaurantTableViewCell.swift in Sources */,
 				9BE7801C21607AF100694AA8 /* FoodPin.xcdatamodeld in Sources */,
 				9BE7800F215DA0A600694AA8 /* MapViewController.swift in Sources */,
@@ -499,10 +519,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FoodPin/FoodPin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMVR3ZLMM9;
 				INFOPLIST_FILE = FoodPin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.FoodPin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongyu.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -513,10 +535,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FoodPin/FoodPin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMVR3ZLMM9;
 				INFOPLIST_FILE = FoodPin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.FoodPin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongyu.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

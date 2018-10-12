@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import CloudKit
 
 class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -142,6 +143,42 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
         dismiss(animated: true, completion: nil)
     }
     
+    func saveRecordToCloud(restaurant: RestaurantMO!) -> Void{
+        
+        //Prepare the record to save
+        let record = CKRecord(recordType: "Restaurant")
+        record.setValue(restaurant.name, forKey: "name")
+        record.setValue(restaurant.type, forKey: "type")
+        record.setValue(restaurant.location, forKey: "location")
+        record.setValue(restaurant.phone, forKey: "phone")
+        record.setValue(restaurant.description, forKey: "description")
+        
+        let imageData = restaurant.image! as Data
+        // Resize the image
+        let originalImage = UIImage(data: imageData)!
+        let scalingFactor = (originalImage.size.width > 1024) ? 1024/originalImage.size.width : 1.0
+        let scaledImage = UIImage(data: imageData, scale: scalingFactor)!
+        
+        // Write the image to local file for temporary use
+        let imageFilePath = NSTemporaryDirectory() + restaurant.name!
+        let imageFileURL = URL(fileURLWithPath: imageFilePath)
+        try?UIImageJPEGRepresentation(scaledImage, 0.8)?.write(to: imageFileURL)
+        
+        //Create image asset for upload
+        let imageAsset = CKAsset(fileURL: imageFileURL)
+        record.setValue(imageAsset, forKey: "image")
+        
+        //Get the iCloud Public Database
+        let publicDatabase = CKContainer.default().publicCloudDatabase
+        
+        //Save the record to iCloud
+        publicDatabase.save(record) { (record, error) in
+            //Remove the temp file
+            try? FileManager.default.removeItem(at: imageFileURL)
+        }
+    }
+    
+    
     @IBAction func saveButtonTapped(sender: AnyObject){
         if nameTextField.text == "" || typeTextField.text == "" || addressTextField.text == "" || phoneTextField.text == "" || descriptionTextView.text == "" {
         let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .alert)
@@ -174,6 +211,8 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
             print("Saving data to context ...")
             appDelegate.saveContext()
         }
+        
+        saveRecordToCloud(restaurant: restaurant)
         
         dismiss(animated: true, completion: nil)
     }
