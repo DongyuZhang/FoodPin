@@ -1,0 +1,9 @@
+/* Class = "UILabel"; text = "Location"; ObjectID = "3im-1W-6ZN"; */
+"3im-1W-6ZN.text" = "地址";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "CS3-qz-oBL"; */
+"CS3-qz-oBL.text" = "類型";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "rUN-Zb-p8c"; */
+"rUN-Zb-p8c.text" = "餐廳名";
+

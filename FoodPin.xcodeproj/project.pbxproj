@@ -10,6 +10,10 @@
 		9B478E2A216ACF4900EF6D98 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B478E29216ACF4900EF6D98 /* CloudKit.framework */; };
 		9B478E2C216C22D500EF6D98 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B478E2B216C22D500EF6D98 /* DiscoverTableViewController.swift */; };
 		9B478E2E217023D400EF6D98 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B478E2D217023D400EF6D98 /* DiscoverTableViewCell.swift */; };
+		9B478E312170707600EF6D98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B478E2F2170707600EF6D98 /* InfoPlist.strings */; };
+		9B478E342170707600EF6D98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B478E322170707600EF6D98 /* Localizable.strings */; };
+		9B478E38217071E400EF6D98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B478E322170707600EF6D98 /* Localizable.strings */; };
+		9B478E3A217071E400EF6D98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B478E322170707600EF6D98 /* Localizable.strings */; };
 		9BE74953216A852C00418F13 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE74951216A852B00418F13 /* About.storyboard */; };
 		9BE74955216A907400418F13 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE74954216A907400418F13 /* AboutTableViewController.swift */; };
 		9BE74957216A9D7300418F13 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE74956216A9D7300418F13 /* WebViewController.swift */; };
@@ -57,6 +61,16 @@
 		9B478E29216ACF4900EF6D98 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9B478E2B216C22D500EF6D98 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		9B478E2D217023D400EF6D98 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
+		9B478E302170707600EF6D98 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9B478E332170707600EF6D98 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		9B478E352170707600EF6D98 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		9B478E362170707600EF6D98 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		9B478E37217071E400EF6D98 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9B478E39217071E400EF6D98 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9B478E3B217071E400EF6D98 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		9B478E3C217071E400EF6D98 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9B478E3E2170752900EF6D98 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "FoodPin/Storyboard/zh-Hant.lproj/Discover.strings"; sourceTree = "<group>"; };
+		9B478E402170752A00EF6D98 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = FoodPin/Storyboard/de.lproj/Discover.strings; sourceTree = "<group>"; };
 		9BE74952216A852B00418F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
 		9BE74954216A907400418F13 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		9BE74956216A9D7300418F13 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +253,8 @@
 				F4A0586F1F59577A00D6288C /* View */,
 				F4A0586D1F59564E00D6288C /* Controller */,
 				F4BD89D21F4E961C00588D6D /* Info.plist */,
+				9B478E322170707600EF6D98 /* Localizable.strings */,
+				9B478E2F2170707600EF6D98 /* InfoPlist.strings */,
 				F4BD89CD1F4E961C00588D6D /* Assets.xcassets */,
 				F4BD89C61F4E961C00588D6D /* AppDelegate.swift */,
 				9BE7801A21607AF100694AA8 /* FoodPin.xcdatamodeld */,
@@ -300,6 +316,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
+				de,
 			);
 			mainGroup = F4BD89BA1F4E961C00588D6D;
 			productRefGroup = F4BD89C41F4E961C00588D6D /* Products */;
@@ -321,9 +339,12 @@
 				F4BD89D11F4E961C00588D6D /* LaunchScreen.storyboard in Resources */,
 				9BE77FF62159A60D00694AA8 /* Rubik-BlackItalic.ttf in Resources */,
 				9BE74953216A852C00418F13 /* About.storyboard in Resources */,
+				9B478E38217071E400EF6D98 /* Localizable.strings in Resources */,
 				9BE77FF22159A60D00694AA8 /* Rubik-LightItalic.ttf in Resources */,
 				F4BD89CE1F4E961C00588D6D /* Assets.xcassets in Resources */,
+				9B478E312170707600EF6D98 /* InfoPlist.strings in Resources */,
 				9BE7801E2161DA6C00694AA8 /* Onboarding.storyboard in Resources */,
+				9B478E3A217071E400EF6D98 /* Localizable.strings in Resources */,
 				9BE77FF52159A60D00694AA8 /* Rubik-Italic.ttf in Resources */,
 				9BE77FF92159A60D00694AA8 /* Rubik-Black.ttf in Resources */,
 				9BE780412168921700694AA8 /* Discover.storyboard in Resources */,
@@ -331,6 +352,7 @@
 				F4BD89CC1F4E961C00588D6D /* Main.storyboard in Resources */,
 				9BE77FF12159A60D00694AA8 /* Rubik-MediumItalic.ttf in Resources */,
 				9BE77FF72159A60D00694AA8 /* Rubik-Medium.ttf in Resources */,
+				9B478E342170707600EF6D98 /* Localizable.strings in Resources */,
 				9BE77FFA2159A60D00694AA8 /* Rubik-BoldItalic.ttf in Resources */,
 				9BE77FF82159A60D00694AA8 /* Rubik-Light.ttf in Resources */,
 			);
@@ -373,6 +395,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9B478E2F2170707600EF6D98 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B478E302170707600EF6D98 /* zh-Hant */,
+				9B478E37217071E400EF6D98 /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9B478E322170707600EF6D98 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B478E332170707600EF6D98 /* zh-Hant */,
+				9B478E39217071E400EF6D98 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		9BE74951216A852B00418F13 /* About.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -385,6 +425,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				9BE780402168921700694AA8 /* Base */,
+				9B478E3E2170752900EF6D98 /* zh-Hant */,
+				9B478E402170752A00EF6D98 /* de */,
 			);
 			name = Discover.storyboard;
 			sourceTree = "<group>";
@@ -393,6 +435,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F4BD89CB1F4E961C00588D6D /* Base */,
+				9B478E352170707600EF6D98 /* zh-Hant */,
+				9B478E3B217071E400EF6D98 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -401,6 +445,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F4BD89D01F4E961C00588D6D /* Base */,
+				9B478E362170707600EF6D98 /* zh-Hant */,
+				9B478E3C217071E400EF6D98 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

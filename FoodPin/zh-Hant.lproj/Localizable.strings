@@ -1,0 +1,48 @@
+/* Camera */
+"Camera" = "相機";
+
+/* Check-in */
+"Check-in" = "報到";
+
+/* Choose your photo source */
+"Choose your photo source" = "選擇相片來源";
+
+/* Delete */
+"Delete" = "删除";
+
+/* Facebook */
+"Facebook" = "臉書";
+
+/* Feedback */
+"Feedback" = "提供意見";
+
+/* Follow Us */
+"Follow Us" = "追蹤我們";
+
+/* OK */
+"OK" = "確定";
+
+/* Oops */
+"Oops" = "錯誤";
+
+/* Photo library */
+"Photo library" = "圖片庫";
+
+/* Rate us on App Store */
+"Rate us on App Store" = "給我們評價";
+
+/* Search restaurants... */
+"Search restaurants..." = "搜尋餐廳...";
+
+/* Share */
+"Share" = "分享";
+
+/* Tell us your feedback */
+"Tell us your feedback" = "有意見！歡迎與我們聯絡";
+
+/* Twitter */
+"Twitter" = "推特";
+
+/* Input error message */
+"We can't proceed because one of the fields is blank. Please note that all fields are required." = "不好意思！你必須填寫所有欄目，我們才可以將餐廳記錄下來。";
+
