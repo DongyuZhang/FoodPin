@@ -45,7 +45,7 @@ class RestaurantDetailMapCell: UITableViewCell {
                     self.mapView.addAnnotation(annotation)
                     
                     //set up zoom level
-                    let region = MKCoordinateRegionMakeWithDistance(annotation.coordinate, 250, 250)
+                    let region = MKCoordinateRegion.init(center: annotation.coordinate, latitudinalMeters: 250, longitudinalMeters: 250)
                     self.mapView.setRegion(region, animated: false)
                 }
             }

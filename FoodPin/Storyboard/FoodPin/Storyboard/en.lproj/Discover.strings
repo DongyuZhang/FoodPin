@@ -1,0 +1,21 @@
+
+/* Class = "UINavigationItem"; title = "Discover"; ObjectID = "As3-G9-MPC"; */
+"As3-G9-MPC.title" = "Discover";
+
+/* Class = "UITabBarItem"; title = "Discover"; ObjectID = "cmQ-Mo-P1Y"; */
+"cmQ-Mo-P1Y.title" = "Discover";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "gaV-Of-PmC"; */
+"gaV-Of-PmC.text" = "Type";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "k4e-mF-a6f"; */
+"k4e-mF-a6f.text" = "Description";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "kOf-xU-Uil"; */
+"kOf-xU-Uil.text" = "Name";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "mGZ-k3-Fji"; */
+"mGZ-k3-Fji.text" = "Phone";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "sOQ-Ko-h1B"; */
+"sOQ-Ko-h1B.text" = "Address";

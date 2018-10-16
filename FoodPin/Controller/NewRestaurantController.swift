@@ -67,7 +67,7 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.shadowImage = UIImage()
         if let customFont = UIFont(name: "Rubik-Medium", size: 35.0) {
-            navigationController?.navigationBar.largeTitleTextAttributes = [ NSAttributedStringKey.foregroundColor: UIColor(red: 231, green: 76, blue: 60), NSAttributedStringKey.font: customFont ]
+            navigationController?.navigationBar.largeTitleTextAttributes = [ NSAttributedString.Key.foregroundColor: UIColor(red: 231, green: 76, blue: 60), NSAttributedString.Key.font: customFont ]
         }
         self.tableView.separatorStyle = .none
     }
@@ -121,8 +121,11 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
         }
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
+        if let selectedImage = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage {
             photoImageView.image = selectedImage
             photoImageView.contentMode = .scaleAspectFill
             photoImageView.clipsToBounds = true
@@ -162,7 +165,7 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
         // Write the image to local file for temporary use
         let imageFilePath = NSTemporaryDirectory() + restaurant.name!
         let imageFileURL = URL(fileURLWithPath: imageFilePath)
-        try?UIImageJPEGRepresentation(scaledImage, 0.8)?.write(to: imageFileURL)
+        try?scaledImage.jpegData(compressionQuality: 0.8)?.write(to: imageFileURL)
         
         //Create image asset for upload
         let imageAsset = CKAsset(fileURL: imageFileURL)
@@ -205,7 +208,7 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
             restaurant.isVisited = false
             
             if let restaurantImage = photoImageView.image {
-                restaurant.image = UIImagePNGRepresentation(restaurantImage)
+                restaurant.image = restaurantImage.pngData()
             }
             
             print("Saving data to context ...")
@@ -217,4 +220,14 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
         dismiss(animated: true, completion: nil)
     }
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
 }

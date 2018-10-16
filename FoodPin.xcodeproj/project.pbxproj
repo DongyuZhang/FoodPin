@@ -11,9 +11,7 @@
 		9B478E2C216C22D500EF6D98 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B478E2B216C22D500EF6D98 /* DiscoverTableViewController.swift */; };
 		9B478E2E217023D400EF6D98 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B478E2D217023D400EF6D98 /* DiscoverTableViewCell.swift */; };
 		9B478E312170707600EF6D98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B478E2F2170707600EF6D98 /* InfoPlist.strings */; };
-		9B478E342170707600EF6D98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B478E322170707600EF6D98 /* Localizable.strings */; };
 		9B478E38217071E400EF6D98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B478E322170707600EF6D98 /* Localizable.strings */; };
-		9B478E3A217071E400EF6D98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B478E322170707600EF6D98 /* Localizable.strings */; };
 		9BE74953216A852C00418F13 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE74951216A852B00418F13 /* About.storyboard */; };
 		9BE74955216A907400418F13 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE74954216A907400418F13 /* AboutTableViewController.swift */; };
 		9BE74957216A9D7300418F13 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE74956216A9D7300418F13 /* WebViewController.swift */; };
@@ -289,11 +287,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = AppCoda;
 				TargetAttributes = {
 					F4BD89C21F4E961C00588D6D = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -344,7 +343,6 @@
 				F4BD89CE1F4E961C00588D6D /* Assets.xcassets in Resources */,
 				9B478E312170707600EF6D98 /* InfoPlist.strings in Resources */,
 				9BE7801E2161DA6C00694AA8 /* Onboarding.storyboard in Resources */,
-				9B478E3A217071E400EF6D98 /* Localizable.strings in Resources */,
 				9BE77FF52159A60D00694AA8 /* Rubik-Italic.ttf in Resources */,
 				9BE77FF92159A60D00694AA8 /* Rubik-Black.ttf in Resources */,
 				9BE780412168921700694AA8 /* Discover.storyboard in Resources */,
@@ -352,7 +350,6 @@
 				F4BD89CC1F4E961C00588D6D /* Main.storyboard in Resources */,
 				9BE77FF12159A60D00694AA8 /* Rubik-MediumItalic.ttf in Resources */,
 				9BE77FF72159A60D00694AA8 /* Rubik-Medium.ttf in Resources */,
-				9B478E342170707600EF6D98 /* Localizable.strings in Resources */,
 				9BE77FFA2159A60D00694AA8 /* Rubik-BoldItalic.ttf in Resources */,
 				9BE77FF82159A60D00694AA8 /* Rubik-Light.ttf in Resources */,
 			);
@@ -458,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -468,6 +466,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -475,6 +474,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -515,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -525,6 +526,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -532,6 +534,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -572,7 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dongyu.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -588,7 +591,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dongyu.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

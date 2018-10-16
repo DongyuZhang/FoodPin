@@ -16,12 +16,12 @@ class DiscoverTableViewController: UITableViewController {
     //Add a Spinner to reduce perceived waiting time
     var spinner = UIActivityIndicatorView()
     
-    private var imageCache = NSCache<CKRecordID, NSURL>()
+    private var imageCache = NSCache<CKRecord.ID, NSURL>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        spinner.activityIndicatorViewStyle = .gray
+        spinner.style = .gray
         spinner.hidesWhenStopped = true
         view.addSubview(spinner)
         
@@ -42,8 +42,8 @@ class DiscoverTableViewController: UITableViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         if let customFont = UIFont(name: "Rubik-Meduim", size: 40.0){
             navigationController?.navigationBar.largeTitleTextAttributes = [
-                NSAttributedStringKey.foregroundColor: UIColor(red: 231, green: 76, blue: 60),
-                NSAttributedStringKey.font: customFont
+                NSAttributedString.Key.foregroundColor: UIColor(red: 231, green: 76, blue: 60),
+                NSAttributedString.Key.font: customFont
             ]
         }
         fetchRecordsFromCloud()
@@ -52,7 +52,7 @@ class DiscoverTableViewController: UITableViewController {
         refreshControl = UIRefreshControl()
         refreshControl?.backgroundColor = UIColor.white
         refreshControl?.tintColor = UIColor.gray
-        refreshControl?.addTarget(self, action: #selector(fetchRecordsFromCloud), for: UIControlEvents.valueChanged)
+        refreshControl?.addTarget(self, action: #selector(fetchRecordsFromCloud), for: UIControl.Event.valueChanged)
     }
 
     @objc func fetchRecordsFromCloud() {
@@ -117,7 +117,7 @@ class DiscoverTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DiscoverTableViewCell.self), for: indexPath) as! DiscoverTableViewCell
 
         // Configure the cell...
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         let restaurant = restaurants[indexPath.row]
         cell.nameLabel.text = restaurant.object(forKey: "name") as? String
         cell.typeLabel.text = restaurant.object(forKey: "type") as? String
